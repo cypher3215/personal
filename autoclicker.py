@@ -2,7 +2,7 @@ import pyautogui
 import keyboard
 import autoclicker
 
-print("Bienvenido maestro San porfavor presione f6 para activar y f7 para desactivar el autoclicker")
+print("Bienvenido maestro San porfavor presione f6 para activar y k para desactivar el autoclicker")
 def clicker1():
     presionar = False 
     while True:
@@ -10,7 +10,7 @@ def clicker1():
             presionar = True
             while presionar:
                 pyautogui.click()
-                if keyboard.is_pressed('k'):
+                if keyboard.is_pressed('f7'):
                     presionar = False
         elif keyboard.is_pressed('f7'):
             presionar = False
